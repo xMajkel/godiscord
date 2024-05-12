@@ -16,9 +16,7 @@ func main() {
     embed.SetUser("Username", "AvatarURL")
 
     //Sets the content (above the embed), for @ mentions
-    func (e *Embed) SetContent(content string) {
-    	e.Content = content
-    }
+    embed.SetContent("@everyone")
 
     //Creates a new field and adds it to the embed
     //boolean represents whether the field is inline or not
