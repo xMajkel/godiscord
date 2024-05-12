@@ -80,6 +80,11 @@ func (e *Embed) SetUser(Username, AvatarURL string) {
 	e.AvatarURL = AvatarURL
 }
 
+// SetContent sets the content (above the embed)
+func (e *Embed) SetContent(content string) {
+	e.Content = content
+}
+
 // SetAuthor sets the author of the Embed
 func (e *Embed) SetAuthor(Name, URL, IconURL string) {
 	if len(e.Embeds) == 0 {
