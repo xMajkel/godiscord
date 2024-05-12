@@ -12,6 +12,9 @@ func main() {
     //Create a new embed object
     embed := godiscord.NewEmbed("Title", "Description", "URL")
 
+    //Overrides webhook's username and/or avatar URL
+    embed.SetUser("Username", "AvatarURL")
+
     //Creates a new field and adds it to the embed
     //boolean represents whether the field is inline or not
     embed.AddField("This is a field", "This is the value", true)
