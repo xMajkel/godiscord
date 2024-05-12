@@ -74,6 +74,12 @@ func NewEmbed(Title, Description, URL string) Embed {
 	return e
 }
 
+// SetUser sets the name and/or avatar URL
+func (e *Embed) SetUser(Username, AvatarURL string) {
+	e.Username = Username
+	e.AvatarURL = AvatarURL
+}
+
 // SetAuthor sets the author of the Embed
 func (e *Embed) SetAuthor(Name, URL, IconURL string) {
 	if len(e.Embeds) == 0 {
