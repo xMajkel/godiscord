@@ -6,7 +6,7 @@ A package for the creation and deliver of embeds for [Discord](https://discord.c
 ```golang
 package main
 
-import "github.com/aiomonitors/godiscord"
+import "github.com/xMajkel/godiscord"
 
 func main() {
     //Create a new embed object
@@ -37,14 +37,10 @@ func main() {
     //also valid
     embed.SetFooter("Text", "")
 
+    //Sets timestamp in the footer
+    embed.SetTimestamp()
+
     //Send embed to given webhook
     embed.SendToWebhook("Webhook URL")
 }
 ```
-
-For any questions or problems regarding this package contact me at:
-[Twitter](https://twitter.com/aiomonitors)
-
-[Email](mailto:navr@discoders.us)
-
-[Personal Site](http://navrxo.com)
